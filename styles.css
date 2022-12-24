@@ -90,8 +90,9 @@
 }
 
 #hero .heroText a:hover {
-    color: #FFF0AD;
+    color: #313638;
     transition: 0.5s ease;
+    background-color: #f8f8f8;
 }
 
 
@@ -235,3 +236,41 @@
     transition: 0.5s ease;
 }
 
+
+/* Media  */
+
+@media (max-width: 515px) {
+
+    #hero {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: 80% 90%;
+    }
+
+    #hero .heroText {
+        text-align: center;
+    }
+
+    #bannerc {
+        height: 25vh;
+    }
+
+    #bannerm {
+        height: 25vh;
+    }
+
+    #productsBox .singleProduct img {
+        width: 80%;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact iframe {
+        width: 80%;
+    }
+}
