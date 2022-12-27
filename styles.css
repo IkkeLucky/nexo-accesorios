@@ -10,10 +10,16 @@
     color: #313638;
 }
 
+@font-face {
+    font-family: Nexa;
+    src: url('/img/Nexa-Trial-Thin.woff');
+    src: url('/img/Nexa-Trial-Thin.woff') format('embedded-opentype'),
+    }
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nexa','Playfair Display', serif;
 }
 
 #header {
