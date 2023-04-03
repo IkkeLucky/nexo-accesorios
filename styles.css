@@ -59,13 +59,13 @@
     background-color: #313638;
     color: #f8f8f8;
     padding: 30px;
-    background-image: url(img/herobg.png);
-    height: 60vh;
+    height: 75vh;
     background-repeat: no-repeat;
-    background-position: 85% 75%;
+    background-position: 80% 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-image: linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url(img/silver-ring.png);
 }
 
 #hero h1 {
@@ -84,7 +84,6 @@
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
     margin-top: 20px;
@@ -99,6 +98,11 @@
     color: #313638;
     transition: 0.5s ease;
     background-color: #f8f8f8;
+}
+
+#hero p {
+    text-shadow: 4px 4px #000;
+    font-size: 22px;
 }
 
 
