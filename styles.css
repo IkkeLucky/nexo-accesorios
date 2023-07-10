@@ -59,7 +59,7 @@
     background-color: #313638;
     color: #f8f8f8;
     padding: 30px;
-    height: 75vh;
+    height: 55vh;
     background-repeat: no-repeat;
     background-position: 80% 75%;
     display: flex;
@@ -87,11 +87,23 @@
     text-decoration: none;
     color: initial;
     margin-top: 20px;
+    margin-left: 35px;
     font-size: 20px;
     border: 1px solid #FFF0AD;
     color: #f8f8f8;
     padding: 15px;
     border-radius: 20px;
+}
+
+.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.grow:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.2, 1.2, 0.3);
+        -moz-transform: scale3d(1.2, 1.2, 0.3);
 }
 
 #hero .heroText a:hover {
@@ -103,6 +115,18 @@
 #hero p {
     text-shadow: 4px 4px #000;
     font-size: 22px;
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
 }
 
 
@@ -150,6 +174,26 @@
     justify-content: space-evenly;
 }
 
+#productsBox img {
+    width: 60%;
+
+}
+
+.shadow-drop-center:hover {
+	animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+    0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+    box-shadow: 0 0 100px 0px rgba(238, 236, 236, 0.35);
+    }
+}
+
+
+
 #productsBox p {
     color: #FFF0AD;
     padding-bottom: 20px;
@@ -158,6 +202,7 @@
 }
 
 #productsBox h3 {
+    padding-top: 25px;
     color: #f8f8f8;
     font-size: 25px;
 }
@@ -253,6 +298,7 @@
 
     #hero {
         display: flex;
+        height: 75vh;
         align-items: flex-start;
         justify-content: center;
         background-position: 80% 90%;
@@ -260,6 +306,10 @@
 
     #hero .heroText {
         text-align: center;
+    }
+
+    #hero .heroText a{
+        margin-left: 0px;
     }
 
     #bannerc {
